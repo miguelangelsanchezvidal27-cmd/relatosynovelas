@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novela Ligera | Título de la Obra</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #ecf0f1;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        .nav-bar {
+            background: var(--card-bg);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+
+        .nav-bar a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .nav-bar a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .synopsis {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color);
+            margin-bottom: 2rem;
+        }
+
+        .chapter-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .chapter-item {
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .chapter-item:hover {
+            transform: translateX(10px);
+            background: #334155;
+        }
+
+        .tag {
+            background: var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TÍTULO DE LA NOVELA</h1>
+</header>
+
+<style>
+    /* Añade esto a tu sección de <style> */
+    .character-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .char-card {
+        background: var(--card-bg);
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        border: 1px solid #334155;
+    }
+    .char-img {
+        width: 100%;
+        height: 250px;
+        background: #000; /* Placeholder */
+        object-fit: cover;
+    }
+    .char-info { padding: 15px; }
+    .char-name { font-weight: bold; color: var(--accent-color); display: block; }
+</style>
+
+<section id="personajes">
+    <h2>Personajes Principales</h2>
+    <div class="character-grid">
+        <div class="char-card">
+            <div class="char-img" style="background: linear-gradient(to bottom, #1e293b, #3498db);"></div>
+            <div class="char-info">
+                <span class="char-name">Protagonista</span>
+                <p>Analítico y calculador. No deja que las emociones dicten sus pasos.</p>
+            </div>
+        </div>
+        </div>
+</section>
+<div class="nav-bar">
+    <a href="#inicio">Inicio</a>
+    <a href="#capitulos">Capítulos</a>
+    <a href="#personajes">Personajes</a>
+</div>
+
+<div class="container">
+    <section id="inicio">
+        <h2>Sinopsis</h2>
+        <div class="synopsis">
+            <p>Aquí va el resumen impactante de nuestro relato. Una historia donde la estrategia y el análisis superan a la impulsividad. El camino es difícil, pero la mente se mantiene despejada.</p>
+        </div>
+    </section>
+
+    <section id="capitulos">
+        <h2>Índice de Capítulos</h2>
+        <div class="chapter-list">
+            <div class="chapter-item">
+                <span>Capítulo 1: El Despertar del Análisis</span>
+                <span class="tag">Nuevo</span>
+            </div>
+            <div class="chapter-item">
+                <span>Capítulo 2: Silencio en la Tormenta</span>
+                <span>Hace 2 días</span>
+            </div>
+            <div class="chapter-item">
+                <span>Capítulo 3: La Pieza Sacrificada</span>
+                <span>Próximamente</span>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Creado con Géminis | "Mente fría"
+</footer>
+
+</body>
+</html>
